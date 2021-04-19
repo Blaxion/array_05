@@ -24,7 +24,7 @@ console.log("FIN");
 
 // 8
 // STAGE 1
-x=[];
+let x=[];
 
 // STAGE 2
 x.push("Obj 1");
@@ -42,13 +42,13 @@ x.unshift("Obj 3");
 alert(x);
 
 // STAGE 7
-x.splice(4,0,"Obj 4","Obj 5","Obj 6");
+x.unshift("Obj 4","Obj 5","Obj 6");
 
 // STAGE 8
 alert(x);
 
 // STAGE 9
-x.splice(0,3)
+x.splice(-3)
 
 // STAGE 10
 x.push("objet 7");
@@ -57,10 +57,10 @@ x.push("objet 7");
 alert(x.length);
 
 // STAGE 12
-x.splice((x.length)-2,2);
+x.splice(0,2);
 
 // STAGE 13
-x.splice(0,2);
+x.splice((x.length)-2,2);
 
 // STAGE 14
 alert(x)
